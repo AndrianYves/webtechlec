@@ -17,7 +17,7 @@ if(isset($_POST['submit'])){
   $d1 = mktime(0, 0, 1, date('m', strtotime($datestart)), 1, date('Y', strtotime($datestart)));
   $d2 = mktime(0, 0, 1, date('m', strtotime($dateend)), 1, date('Y', strtotime($dateend)));
 
-   $total_month = 0;
+   $total_month = 1;
    while (($d1 = strtotime("+1 MONTH", $d1)) <= $d2) {
        $total_month++;
    }
